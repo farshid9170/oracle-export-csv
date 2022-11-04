@@ -6,9 +6,9 @@ source /home/oracle/env.sh
 # Load database connection info
 ORACLE_HOST="oc-scan"
 ORACLE_PORT="1521"
-ORACLE_DATABASE="ibsdb"
-ORACLE_USERNAME="ibsuser"
-ORACLE_PASSWORD="grrboorah22"
+ORACLE_DATABASE=""
+ORACLE_USERNAME=""
+ORACLE_PASSWORD=""
 
 EXPORT_PATH="/tmp"
 
@@ -19,10 +19,10 @@ EXPORT_PATH="/tmp"
 
 
 
-START_FROM_DATE=$(date --date="114 day ago - $i days" +"%Y%m%d")
-START_TO_DATE=$(date --date="113 day ago - $i days" +"%Y%m%d")
-SESSION_GROUP_ID=24692
-ISP_ID=36
+START_FROM_DATE=$(date --date="2 day ago - $i days" +"%Y%m%d")
+START_TO_DATE=$(date --date="1 day ago - $i days" +"%Y%m%d")
+SESSION_GROUP_ID=X
+ISP_ID=X
 
 
 export_conlog () {

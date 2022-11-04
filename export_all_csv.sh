@@ -6,22 +6,22 @@ source /home/oracle/env.sh
 # Load database connection info
 ORACLE_HOST="localhost"
 ORACLE_PORT="1521"
-ORACLE_DATABASE="ibs"
-ORACLE_USERNAME="ibsuser"
-ORACLE_PASSWORD="grrboorah22"
+ORACLE_DATABASE=""
+ORACLE_USERNAME=""
+ORACLE_PASSWORD=""
 
 EXPORT_PATH="/mnt"
 
 
 for i in {1..62}; do
 
-#Date1=$(date --date="143 day ago - $i days" +"%Y%m%d")
-#Date2=$(date --date="142 day ago - $i days" +"%Y%m%d")
+#Date1=$(date --date="2 day ago - $i days" +"%Y%m%d")
+#Date2=$(date --date="1 day ago - $i days" +"%Y%m%d")
 
 
-STOP_FROM_DATE=$(date --date="142 day ago - $i days" +"%Y%m%d")
-STOP_TO_DATE=$(date --date="142 day ago - $i days + 1 day" +"%Y%m%d")
-START_FROM_DATE=$(date --date="143 day ago - $i days" +"%Y%m%d")
+STOP_FROM_DATE=$(date --date="1 day ago - $i days" +"%Y%m%d")
+STOP_TO_DATE=$(date --date="1 day ago - $i days + 1 day" +"%Y%m%d")
+START_FROM_DATE=$(date --date="2 day ago - $i days" +"%Y%m%d")
 START_TO_DATE=$STOP_TO_DATE
 
 export_conlog () {
