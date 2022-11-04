@@ -16,4 +16,4 @@ none
 incase of you need all tables just edit oracle username-password-database in export_all_csv.sh and start with bash
 ./export_all_csv.sh
 
-incase of you need scpecific table edit oracle username-password-database and  your tables ( in this samle specific tables are : SESSION_GROUP_ID and ISP_ID
+incase of you need scpecific table edit oracle username-password-database and  your tables in file export_by_table.sh ( in this samle specific tables are : SESSION_GROUP_ID and ISP_ID
